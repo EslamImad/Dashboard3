@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+  
+        <html dir="rtl">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+       <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/all.css">
+ 
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Sales', 'Expenses', 'Profit'],
+          ['2014', 1000, 400, 200],
+          ['2015', 1170, 460, 250],
+          ['2016', 660, 1120, 300],
+          ['2017', 1030, 540, 350]
+        ]);
+
+        var options = {
+          backgroundColor:"#FEA01C",
+          chart: {
+            title: 'Company Performance',
+            subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+          }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+  google.charts.load('current', {'packages':['corechart']});
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Year', 'Sales', 'Expenses'],
+      ['2004',  1000,      400],
+      ['2005',  1170,      460],
+      ['2006',  660,       1120],
+      ['2007',  1030,      540]
+    ]);
+
+    var options = {
+      backgroundColor	:"green",
+      title: 'Company Performance',
+      curveType: 'function',
+      legend: { position: 'bottom' }
+    };
+
+    var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+    chart.draw(data, options);
+  }
+    </script>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+  google.charts.load('current', {'packages':['line']});
+  google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+
+  var data = new google.visualization.DataTable();
+  data.addColumn('number', 'Day');
+  data.addColumn('number', 'Guardians of the Galaxy');
+  data.addColumn('number', 'The Avengers');
+  data.addColumn('number', 'Transformers: Age of Extinction');
+
+  data.addRows([
+    [1,  37.8, 80.8, 41.8],
+    [2,  30.9, 69.5, 32.4],
+    [3,  25.4,   57, 25.7],
+    [4,  11.7, 18.8, 10.5],
+    [5,  11.9, 17.6, 10.4],
+    [6,   8.8, 13.6,  7.7],
+    [7,   7.6, 12.3,  9.6],
+    [8,  12.3, 29.2, 10.6],
+    [9,  16.9, 42.9, 14.8],
+    [10, 12.8, 30.9, 11.6],
+    [11,  5.3,  7.9,  4.7],
+    [12,  6.6,  8.4,  5.2],
+    [13,  4.8,  6.3,  3.6],
+    [14,  4.2,  6.2,  3.4]
+  ]);
+
+  var options = {
+    backgroundColor:"#EC4B48",
+    chart: {
+      title: 'Box Office Earnings in First Two Weeks of Opening',
+      subtitle: 'in millions of dollars (USD)'
+    },
+    
+    axes: {
+      x: {
+        0: {side: 'top'}
+      }
+    }
+  };
+
+  var chart = new google.charts.Line(document.getElementById('line_top_x'));
+
+  chart.draw(data, google.charts.Line.convertOptions(options));
+}
+    </script>
+
+ </head>
+
+ <body>
+        <div class="maindiv">
+<Div class="div1">
+<p class="p1">تيم الإبداعية</p>
+<Hr class="hr1">
+    <div class="a">
+           <span class="fas fa-th-large icon"></span>
+         <a class="a1" href="index.html">لوحة التحكم</a>
+        </div>
+        <div class="a">
+
+          <span class="fas fa-user icon"></span>
+          <a class="a1" href="UserProfile.html">بروفايل المستخدم</a>
+        </div>
+          <div class="a">
+
+            <span class="fas fa-tablet-alt"></span>
+            <a class="a1" href="Tablelist.html">قائمة الجدول</a>
+          </div>
+          <div class="a">
+
+             <span class="fas fa-columns icon"></span>
+            <a class="a1" href="#">الطباعة</a>
+        
+          </div>
+          <div class="a">
+
+            <span class="fas fa-columns icon"></span>
+            <a class="a1" href="#">الأيقونات</a>
+          </div>
+          <div class="a">
+
+            <span class="fas fa-map-marker-alt icon"></span>
+           <a class="a1" href="#">الخرائط</a>
+          </div>
+          <div class="a">
+
+            <span class="fas fa-bell icon"></span>
+            <a class="a1" href="#">الإشعارات</a>
+          </div>
+          <div class="a">
+
+            <span class="fas fa-globe icon"></span>       
+             <a class="a1" href="#"> RTL دعم </a>
+        </div>
+        <div class="a">
+
+          <span class="fas fa-caret-square-up icon"></span> 
+                 <a class="a1" href="#">التطور للاحترافية</a>
+      </div>
+
+   </Div>
+<Div class="div2">
+    <div class="div5">
+        <Div class="div6">
+            <Div class="div6-1">
+                    <span class="span2">لوحة التحكم</span>
+            </Div>
+            <div  class="div6-2">
+                    <input class="searchinput" type="text" placeholder="البحث">
+                    <span class="fas fa-search icon2"></span>
+                    <span class="fas fa-th-large Notificationsicon"></span>
+                    <span class="fas fa-bell Notificationsicon"></span>
+                    <span class="fas fa-user Notificationsicon"></span>
+                    <a class="English" href="index.html">English</a>
+
+            </div>
+
+        </Div>
+<div class="boxdiv">
+
+       <div class="dd">
+        <Div class="div3">
+                <Div class="div3-1">
+                        <p class="p2">المساحة المستخدمة</p>
+                        <p class="p3">49/50 <span class="GB">GB</span> </p>
+
+                </Div>
+                <hr class="hr2">
+                <p class="para3"><span class="fas fa-exclamation-triangle icon6"></span> <A  class="aa"href="#">خذ مساحة اكثر..
+                         </A></p> 
+
+            </Div>
+            <div class="div4">
+                <span class="fas fa-th-large icon3"></span>
+              </div>
+        </div>
+
+        <div class="dd">
+       <Div class="div3">
+             <Div class="div3-1">
+         <p class="p2">الإيرادات</p>
+         <p class="p3">$34,245</p>     
+        
+                </Div>
+             <hr class="hr2">
+             <p class="para3"> <span class="fas fa-calendar-week"></span> آخر 24 ساعة</p> 
+
+         </Div>
+             <div class="div4-1">
+                <span class="fas fa-landmark icon3"></span>
+                             </div>
+                </div>
+                <div class="dd">
+         <Div class="div3">
+                <Div class="div3-1">
+          <p class="p2">القضايا الثابتة</p>
+         <p class="p3 p3-2">75</p>     
+           </Div>
+         <hr class="hr2">
+         <p class="para3"> <span class="fas fa-tag"></span> Github التتبع من </p> 
+
+                
+             </Div>
+           <div class="div4-2">
+            <span class="fas fa-exclamation-circle icon3 circle"></span>
+
+            </div>
+        </div>
+      <div class="dd">
+         <Div class="div3">
+           <Div class="div3-1">
+                    <p class="p2">المتابعون</p>
+                    <p class="p3">49/50 <span class="GB">GB</span> </p>
+                        
+             </Div>
+               <hr class="hr2">
+               <p class="para3"> <span class="fas fa-history"></span> مجرد تحديث</p> 
+           
+            </Div>
+               <div class="div4-3">
+                  <span class="fab fa-twitter icon3 "></span>
+
+                </div>
+           </div>
+</div>
+         <Div class="boxdiv2">
+<div class="div7">
+        <div class="div7-1">
+          <div class="div7-2">
+              <p class="para">المبيعات اليومي  </p>
+              <p class="para2"> <span class="fas fa-arrow-up increaseicon"></span> <span class="span1"> 55%</span>  زيادة في مبيعات اليوم
+              </p> 
+          </div>
+          <hr class="hr5">
+<p class="para3"><span class="far fa-clock"></span>تم التحديث منذ 4 دقائق
+</p>
+    </div> 
+    <Div class="div7-3">
+        <div id="curve_chart" style="width: 320px; height: 200px; "></div>
+
+    </Div> 
+ </div>
+<div class="div8">
+        <div class="div8-1">
+            <div class="div7-2">
+                <p class="para">اشتراك البريد الإلكتروني   </p>
+                <p class="para2"> آخر أداء للحملة         </p> 
+            </div>
+            <hr class="hr5">
+  <p class="para3"><span class="far fa-clock"></span>الحملة أرسلت منذ يومين
+  </p>
+        </div>
+        <Div class="div7-3">
+            <div id="columnchart_material"style="width: 320px; height: 200px;"></div>
+
+    </Div> 
+</div>
+<div class="div9">
+        <div class="div9-1">
+            <div class="div7-2">
+                <p class="para">المهام المنجزة  </p>
+                <p class="para2"> آخر أداء للحملة                    </p> 
+              </div>
+              <hr class="hr5">
+    <p class="para3"><span class="far fa-clock"></span>الحملة أرسلت منذ يومين
+    </p>
+        </div>
+        <Div class="div7-3">
+            <div id="line_top_x" style="width: 320px; height: 200px; "></div>
+
+          </Div> 
+
+</div>
+</Div>  
+    </div>
+  
+
+</Div>
+
+        </div>
+    </body>
+</html>
